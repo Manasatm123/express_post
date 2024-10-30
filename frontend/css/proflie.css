@@ -1,0 +1,133 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container styling */
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* For positioning the add-post button */
+}
+
+/* User details styling */
+.userdetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.userinfo {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.userinfo img {
+    border-radius: 50%;
+    border: 3px solid #ccc;
+}
+
+.userinfo h2 {
+    margin: 8px 0;
+    font-size: 18px;
+}
+
+/* Button styling */
+button {
+    padding: 8px 16px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#btn {
+    background-color: #28a745; 
+}
+
+#logoutacc {
+    background-color: #dc3545; 
+}
+
+/* Add-post button styling */
+.add-post {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.post-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+/* Post styling */
+.post-page {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.post-page div {
+    text-align: center;
+}
+
+.post-page img {
+    width: 100%;
+    height: 150px;
+    max-width: 150px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    transition: transform 0.3s;
+}
+
+.post-page img:hover {
+    transform: scale(1.05);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+    
+    .userdetails h2 {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}

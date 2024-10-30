@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show post</title>
+    <link rel="stylesheet" href="../css/showpost.css">
+</head>
+<body>
+    <div id="post-container">
+        <div id="image-preview" style="border: none;">
+            <!-- <p>Hover over an image to preview it here</p> -->
+             <img src="" alt="" id="img-preview">
+        </div>
+        <div class="caption" id="post-caption"></div>
+        <div class="description" id="post-description"></div>
+        <br>
+        <div id="images-container"></div>
+        <div class="button-container">
+            <button onclick="editPost()" class="editbtn">Edit</button>
+            <button onclick="deletepost()" class="deletebtn" id="deletebtn">Delete</button>
+        </div>
+        
+        
+    </div>
+  
+
+
+    <script src="../js/showpost.js"></script>
+</body>
+</html>
